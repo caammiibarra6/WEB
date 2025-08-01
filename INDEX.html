@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maki Sushi</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      background-color: #e60023;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1576402187875-bdecb9f9c194');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      background-color: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Maki Sushi</h1>
+  <p>Fresco. Auténtico. Irresistible.</p>
+</header>
+
+<nav>
+  <a href="#menu">Menú</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+  <h2>¡Descubre el mejor sushi de la ciudad!</h2>
+</div>
+
+<section class="section" id="menu">
+  <h3>Nuestro Menú</h3>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb30" alt="Roll clásico">
+      <h4>Roll Clásico</h4>
+      <p>Delicioso roll con salmón fresco, aguacate y queso crema.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1627398242454-54778e14c0f0" alt="Maki especial">
+      <h4>Maki Especial</h4>
+      <p>Una mezcla única de sabores con ingredientes secretos del chef.</p>
+    </div>
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1612197528465-f6d93353ebcc" alt="Nigiri surtido">
+      <h4>Nigiri Surtido</h4>
+      <p>Variedad de nigiris preparados al momento por nuestros expertos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="nosotros">
+  <h3>Sobre Nosotros</h3>
+  <p>En Maki Sushi, combinamos tradición japonesa con un toque moderno para ofrecerte una experiencia culinaria inolvidable. Nuestros ingredientes son siempre frescos y seleccionados cuidadosamente.</p>
+</section>
+
+<section class="section" id="contacto">
+  <h3>Contáctanos</h3>
+  <p>📍 Calle del Sushi 123, Ciudad del Sabor</p>
+  <p>📞 +34 600 123 456</p>
+  <p>📧 contacto@makisushi.com</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Maki Sushi. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
